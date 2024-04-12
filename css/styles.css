@@ -106,13 +106,14 @@ a {
 
 .contenedor-cajas p {
     text-align: justify;
+    font-family: 'PT Sans', Verdana, sans-serif;
     margin: 20px;
     color: #fff;
 }
 
 .box {
     width: 900px;
-    height: 200px;
+    height: auto;
     background-color: #01004c;
     background-size: cover;
     margin: 20px;
@@ -130,10 +131,33 @@ a {
     align-self: flex-end;
     text-align: end;
     box-shadow: -20px -16px #7700ff;
+    color: #fff;
 }
 
 #habilidades h2 {
     text-shadow: 3px 3px 0px #7700ff;
+}
+
+#habilidades img {
+    width: 100px;
+    height: 100px;
+}
+
+.logohabilidades {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logohabilidades div {
+    text-align: center;
+}
+
+.logohabilidades p {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #fff;
 }
 
 #proyectos {
