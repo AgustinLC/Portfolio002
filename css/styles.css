@@ -2,6 +2,10 @@
     font-family: "EnterCommand";
     src: url(/Portfolio002/fonts/EnterCommand.ttf);
 }
+@font-face {
+    font-family: "Play";
+    src: url(/Portfolio002/fonts/NunitoSans_7pt_Condensed-Regular.ttf);
+}
 
 /* Estilos generales */
 body {
@@ -99,20 +103,21 @@ a {
 
 .contenedor-cajas h2 {
     font-family: EnterCommand, sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     margin: 20px;
     color: #fff;
 }
 
 .contenedor-cajas p {
     text-align: justify;
-    font-family: 'PT Sans', Verdana, sans-serif;
+    font-family: Play ;
+    font-size: calc(1.275rem + .2vw) !important;
     margin: 20px;
     color: #fff;
 }
 
 .box {
-    width: 900px;
+    width: 1200px;
     height: auto;
     background-color: #01004c;
     background-size: cover;
@@ -160,20 +165,28 @@ a {
     color: #fff;
 }
 
-#proyectos {
+#estudios{
     box-shadow: 20px -16px #fe1de6;
 }
 
-#proyectos h2 {
+#estudios h2 {
     text-shadow: 3px 3px 0px #fe1de6;
 }
 
-#contacto {
+#proyectos {
     align-self: flex-end;
     text-align: end;
     box-shadow: -20px -16px #25a9ff;
 }
 
-#contacto h2 {
+#proyectos h2 {
     text-shadow: 3px 3px 0px #25a9ff;
+}
+
+#contacto {
+    box-shadow: 20px -16px #7700ff;
+}
+
+#contacto h2 {
+    text-shadow: 3px 3px 0px #7700ff;
 }
