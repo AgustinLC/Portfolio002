@@ -1,10 +1,11 @@
 @font-face {
     font-family: "EnterCommand";
-    src: url(/Portfolio002/fonts/EnterCommand.ttf);
+    src: url(/fonts/EnterCommand.ttf);
 }
+
 @font-face {
     font-family: "Play";
-    src: url(/Portfolio002/fonts/NunitoSans_7pt_Condensed-Regular.ttf);
+    src: url(/fonts/NunitoSans_7pt_Condensed-Regular.ttf);
 }
 
 /* Estilos generales */
@@ -12,7 +13,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(/Portfolio002/img/fondobody9.jpg);
+    background-image: url(/img/fondobody9.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,12 +54,15 @@ ul {
     list-style: none;
 }
 
-a {
+.menu a {
     color: inherit;
     text-decoration: none;
     font-family: EnterCommand, sans-serif;
     font-size: 40px;
     text-shadow: 4px 4px 0px #7700ff;
+    position: relative;
+    display: block;
+    padding: 5px;
 }
 
 .menu {
@@ -68,12 +72,6 @@ a {
 
 .menu li {
     margin-right: 50px;
-}
-
-.menu a {
-    position: relative;
-    display: block;
-    padding: 5px;
 }
 
 .menu a::before {
@@ -110,7 +108,7 @@ a {
 
 .contenedor-cajas p {
     text-align: justify;
-    font-family: Play ;
+    font-family: Play;
     font-size: calc(1.275rem + .2vw) !important;
     margin: 20px;
     color: #fff;
@@ -119,7 +117,7 @@ a {
 .box {
     width: 1200px;
     height: auto;
-    background-color: #01004c;
+    background-color: #232566;
     background-size: cover;
     margin: 20px;
 }
@@ -165,14 +163,6 @@ a {
     color: #fff;
 }
 
-#estudios{
-    box-shadow: 20px -16px #fe1de6;
-}
-
-#estudios h2 {
-    text-shadow: 3px 3px 0px #fe1de6;
-}
-
 #proyectos {
     align-self: flex-end;
     text-align: end;
@@ -189,4 +179,36 @@ a {
 
 #contacto h2 {
     text-shadow: 3px 3px 0px #7700ff;
+}
+
+/*Estilo caja de estudios*/
+
+#estudios {
+    box-shadow: 20px -16px #fe1de6;
+}
+
+#estudios h2 {
+    text-shadow: 3px 3px 0px #fe1de6;
+}
+
+#estudios table {
+    width: 100%;
+}
+
+#estudios td {
+    padding: 20px 30px;
+    vertical-align: middle;
+}
+#estudios table tr td a {
+    color: #027ff5;
+}
+#estudios td:first-child {
+    text-align: left;
+    font-family: Play;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#estudios td:last-child {
+    text-align: center;
 }
